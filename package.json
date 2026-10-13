@@ -1,7 +1,11 @@
 {
   "name": "playwright-mcp-cloud",
   "version": "1.0.0",
+  "engines": {
+    "node": ">=18"
+  },
   "scripts": {
-    "start": "npx -y @playwright/mcp@latest --port 10000 --isolated --sse"
+    "start": "npx -y @playwright/mcp@latest --port ${PORT:-10000} --isolated --sse --no-sandbox",
+    "postinstall": "npx playwright install --with-deps"
   }
 }

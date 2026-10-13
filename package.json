@@ -5,7 +5,7 @@
     "node": ">=18"
   },
   "scripts": {
-    "start": "npx -y @playwright/mcp@latest --port ${PORT:-10000} --isolated --sse --no-sandbox",
+    "start": "npx -y @playwright/mcp@latest --port ${PORT:-10000} --isolated --no-sandbox",
     "postinstall": "npx playwright install --with-deps"
   }
 }

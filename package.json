@@ -1,0 +1,7 @@
+{
+  "name": "playwright-mcp-cloud",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "npx -y @playwright/mcp@latest --port 10000 --isolated"
+  }
+}
